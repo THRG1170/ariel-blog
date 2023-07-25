@@ -37,7 +37,9 @@ function App() {
             </li>
             <li className="tri">
               <button className="slideBoxBtn" onClick={setActiveSlideShow}>
-                <i class="fa-solid fa-bars"></i>
+                <i
+                  class={active ? "fa-solid fa-xmark" : "fa-solid fa-bars"}
+                ></i>
               </button>
             </li>
           </ul>
