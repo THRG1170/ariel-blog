@@ -1,0 +1,49 @@
+#perkenalan {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+
+.perkenalan {
+  width: 30%;
+}
+
+#perkenalan h1 {
+  width: 120%;
+}
+
+.perkenalan p {
+  margin-top: 20px;
+  color: #176b87;
+  font-weight: 600;
+}
+
+.fotoaril {
+  height: 300px;
+}
+
+@media (max-width: 480px) {
+}
+@media (max-width: 768px) {
+  .fotoaril {
+    height: 240px;
+  }
+  #perkenalan h1 {
+    width: 100%;
+  }
+  .perkenalan {
+    text-align: center;
+    width: 80%;
+  }
+  #perkenalan {
+    margin-top: 2rem;
+    justify-content: start;
+    height: 120vh;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1024px) {
+}

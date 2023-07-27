@@ -4,7 +4,7 @@ nav {
   display: flex;
   align-items: center;
   background: #00000000;
-  color: #dafffb;
+  color: #001c30;
   padding: 0 2rem;
   height: 60px;
   transition: background-color ease-in-out 100ms;
@@ -30,7 +30,7 @@ nav ul .tri {
 }
 
 a {
-  color: #dafffb;
+  color: #001c30;
   text-decoration: none;
 }
 
@@ -73,7 +73,8 @@ a {
 }
 
 nav.active {
-  background-color: #176b87;
+  background-color: #176b87db;
+  filter: blur(50%);
 }
 @media (max-width: 480px) {
 }
@@ -90,4 +91,8 @@ nav.active {
   }
 }
 @media (max-width: 1024px) {
+}
+
+.tri button i {
+  color: #001c30;
 }
