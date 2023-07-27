@@ -82,7 +82,7 @@ nav.active a {
 }
 
 nav.active {
-  background-color: #176b87db;
+  background-color: #176387db;
   color: #dafffb;
   filter: blur(50%);
 }
