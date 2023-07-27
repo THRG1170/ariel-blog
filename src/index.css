@@ -8,7 +8,13 @@
   height: 300vh;
 }
 
+body::selection {
+  background-color: #64ccc5;
+  color: #001c30;
+}
+
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
