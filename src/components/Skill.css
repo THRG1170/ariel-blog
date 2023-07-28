@@ -1,0 +1,129 @@
+#skill {
+  width: 100%;
+  height: 100%;
+  padding: 6rem;
+  display: block;
+  background-color: #176b87;
+}
+
+.heading {
+  color: #dafffb;
+  width: 50%;
+}
+
+.heading p {
+  font-weight: 100;
+}
+
+.skills {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.publicspeaking {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+
+.dutaariel {
+  height: 100%;
+  width: 100%;
+}
+
+.publicspeaking::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all ease-in-out 200ms;
+}
+.publicspeaking::before {
+  content: "Public Speaking";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-weight: 600;
+  backdrop-filter: blur(2px);
+}
+.publicspeaking:hover::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
+}
+
+.menggambar {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+
+.gambarariel {
+  height: 100%;
+  width: 100%;
+}
+
+.menggambar::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all ease-in-out 200ms;
+}
+.menggambar::before {
+  content: "Menggambar";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-weight: 600;
+  backdrop-filter: blur(2px);
+}
+.menggambar:hover::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
+}
+
+@media (max-width: 480px) {
+}
+@media (max-width: 768px) {
+  #skill {
+    padding: 2rem;
+  }
+
+  .heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .heading p {
+    font-weight: 100;
+  }
+
+  .skills {
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1024px) {
+}

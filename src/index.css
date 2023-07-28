@@ -7,8 +7,7 @@
   font-family: "Nunito", sans-serif;
   height: 300vh;
 }
-
-body::selection {
+::selection {
   background-color: #64ccc5;
   color: #001c30;
 }
