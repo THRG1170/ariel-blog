@@ -54,6 +54,7 @@ function Navbar() {
           active ? "slideBoxActive slideBox" : "slideBoxNotActive slideBox"
         }
       >
+        <h2 className="navbarheader">Navigation Bar</h2>
         <ul>
           <li>
             <a href="#perkenalan" onClick={() => setActive(false)}>
@@ -71,6 +72,9 @@ function Navbar() {
             </a>
           </li>
         </ul>
+        <footer>
+          <a href="https://github.com/THRG1170/ariel-blog">Source Code</a>
+        </footer>
       </div>
     </nav>
   );

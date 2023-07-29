@@ -31,9 +31,29 @@
 }
 
 .skills {
+  gap: 50px;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 20px;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.kepemimpinan {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+
+.pengalaman {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: aliceblue;
 }
 
 .publicspeaking {
@@ -57,6 +77,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   transition: all ease-in-out 200ms;
+  z-index: 1;
 }
 .publicspeaking::before {
   content: "Public Speaking";
@@ -69,11 +90,9 @@
   color: aliceblue;
   font-weight: 600;
   backdrop-filter: blur(2px);
+  z-index: 1;
 }
 .publicspeaking:hover::before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   opacity: 0%;
 }
 
@@ -112,9 +131,52 @@
   backdrop-filter: blur(2px);
 }
 .menggambar:hover::before {
+  opacity: 0%;
+}
+.kepemimpinan::before {
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all ease-in-out 200ms;
+}
+.kepemimpinan::before {
+  content: "Kepemimpinan";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-weight: 600;
+  backdrop-filter: blur(2px);
+}
+.kepemimpinan:hover::before {
+  opacity: 0%;
+}
+.pengalaman::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all ease-in-out 200ms;
+}
+.pengalaman::before {
+  content: "Pengalaman organisasi";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-weight: 600;
+  backdrop-filter: blur(2px);
+}
+.pengalaman:hover::before {
   opacity: 0%;
 }
 
@@ -145,4 +207,93 @@
   }
 }
 @media (max-width: 1024px) {
+}
+
+.publicspeaking .penjelasanskill {
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  align-items: end;
+  padding: 0 10px 10px 10px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8379726890756303) 53%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  height: 50%;
+  color: #dafffb;
+  bottom: 0;
+  opacity: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.publicspeaking:hover .penjelasanskill {
+  opacity: 100%;
+}
+.menggambar .penjelasanskill {
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  align-items: end;
+  padding: 0 10px 10px 10px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8379726890756303) 53%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  height: 50%;
+  color: #dafffb;
+  bottom: 0;
+  opacity: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.menggambar:hover .penjelasanskill {
+  opacity: 100%;
+}
+.kepemimpinan .penjelasanskill {
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  align-items: end;
+  padding: 0 10px 10px 10px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8379726890756303) 53%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  height: 50%;
+  color: #dafffb;
+  bottom: 0;
+  opacity: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.kepemimpinan:hover .penjelasanskill {
+  opacity: 100%;
+}
+.pengalaman .penjelasanskill {
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  align-items: end;
+  padding: 0 10px 10px 10px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8379726890756303) 53%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  height: 50%;
+  color: #dafffb;
+  bottom: 0;
+  opacity: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.pengalaman:hover .penjelasanskill {
+  opacity: 100%;
 }

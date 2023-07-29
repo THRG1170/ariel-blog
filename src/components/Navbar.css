@@ -10,6 +10,9 @@ nav {
   transition: background-color ease-in-out 100ms;
   z-index: 100;
 }
+.navbarheader {
+  margin-bottom: 30px;
+}
 
 nav li {
   list-style: none;
@@ -48,18 +51,23 @@ a {
 }
 
 .slideBox {
-  display: none;
+  padding: 49px 24px;
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   color: #dafffb;
   bottom: 0;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   width: 80%;
   background: #001c30c0;
   transition: left cubic-bezier(0.2, 0.73, 0.65, 0.96) 300ms;
 }
 
+.slideBox footer {
+  margin-top: auto;
+}
 .slideBox uL {
   display: flex;
   flex-direction: column;
