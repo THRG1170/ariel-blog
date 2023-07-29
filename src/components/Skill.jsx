@@ -3,6 +3,10 @@ import "./Skill.css";
 function App() {
   return (
     <>
+      <div className="waves up">
+        <img src="wave (7).svg" alt="" />
+        <img src="wave (3).svg" alt="" />
+      </div>
       <section id="skill">
         <div className="heading">
           <h1>My Skills</h1>
@@ -22,6 +26,10 @@ function App() {
           </div>
         </div>
       </section>
+      <div className="waves down">
+        <img src="wave (6).svg" alt="" />
+        <img src="wave (2).svg" alt="" />
+      </div>
     </>
   );
 }

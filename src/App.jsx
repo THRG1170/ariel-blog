@@ -2,6 +2,7 @@ import viteLogo from "/vite.svg";
 import Navbar from "./components/Navbar";
 import Perkenalan from "./components/Perkenalan";
 import Skill from "./components/Skill";
+import Hubungi from "./components/Hubungi";
 import "./App.css";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <Perkenalan></Perkenalan>
         <Skill></Skill>
       </main>
-      <footer id="contact">ini contact</footer>
+      <Hubungi></Hubungi>
     </>
   );
 }

@@ -7,6 +7,7 @@
   justify-content: center;
   gap: 3rem;
   align-items: center;
+  margin-bottom: 10rem;
 }
 
 .perkenalan {
@@ -54,6 +55,7 @@
   }
   #perkenalan {
     margin-top: 2rem;
+    margin-bottom: 0rem;
     justify-content: start;
     padding-top: 2.5rem;
     padding-bottom: 5rem;
