@@ -10,7 +10,7 @@ function Pekernalan() {
           <p>
             Nama panjang saya <span>Ariel Hutomo Daeng Malongi</span>. Saya
             murid <span>SMA NEGERI 1 PALU</span>. Saya tinggal di Sulawesi
-            Tengah, Kota Palu, Jln. Dr. Wahidin. <br />
+            Tengah, Kota Palu, Jln. Doctor. Wahidin. <br />
             Ayo liat sekitar dan mengetahui siapa gweh!
           </p>
           <a href="#skill" className="cta">
